@@ -1,2 +1,2 @@
-# Product-Research-Agent
-A streamlit app integrated with LLM to enable user to research about various products across any domain before making their purchase
+# Research-Agent
+A streamlit app integrated with LLM to enable user to research about various things in according to their research style and preferences
