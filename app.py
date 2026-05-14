@@ -26,11 +26,11 @@ with st.sidebar:
 
 @st.cache_resource
 def get_db():
-    embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+    embeddings = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001")
     return FAISS.from_texts(["Internal Specs: Sony Alpha 7 IV - $2,498", "Internal Specs: Canon EOS R6 - $2,499"], embeddings).as_retriever()
 
 retriever = get_db()
-llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0.2)
+llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash-lite", temperature=0.2)
 
 query = st.text_input("Ask about any product:")
 img = st.file_uploader("Upload Image (Optional)", type=["jpg", "png"])
