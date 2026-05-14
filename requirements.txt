@@ -1,7 +1,7 @@
 streamlit
-langchain>=0.3.0
+langchain
 langchain-google-genai
 langchain-community
-langgraph>=0.2.67
 faiss-cpu
-sentence-transformers
+pillow
+pypdf
